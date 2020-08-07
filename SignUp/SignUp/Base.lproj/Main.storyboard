@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvR-EJ-U4x">
+                                <rect key="frame" x="332" y="100" width="104" height="40.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbv-Ps-mMm">
+                                <rect key="frame" x="100" y="190.5" width="54.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름을 입력해주세요" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="CMv-dJ-Nyi">
+                                <rect key="frame" x="204.5" y="186" width="463.5" height="38"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wDg-I8-qvo"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-oG-I8J">
+                                <rect key="frame" x="100" y="249" width="72.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연락처 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edr-dx-4Fo">
+                                <rect key="frame" x="100" y="307.5" width="72.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="010XXXXXXXX" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="CVo-Y7-kx9">
+                                <rect key="frame" x="204.5" y="303.5" width="463.5" height="37"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bUj-7P-2Kn"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="생년월일 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAH-S3-OF8">
+                                <rect key="frame" x="100" y="366" width="90.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YYMMDD" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="the-hl-wk8">
+                                <rect key="frame" x="204.5" y="361.5" width="463.5" height="38"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="F4u-Ua-Fbi"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnI-wD-4lv">
+                                <rect key="frame" x="336.5" y="444.5" width="95" height="46"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHZ-lT-4Mg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@example.com" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8Jm-g5-ILu">
+                                <rect key="frame" x="204.5" y="244.5" width="463.5" height="38"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LQs-cG-way"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="회원가입 결과" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6D9-6L-GQT">
+                                <rect key="frame" x="100" y="540.5" width="568" height="433.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="the-hl-wk8" secondAttribute="trailing" constant="100" id="24k-el-J3R"/>
+                            <constraint firstItem="8Jm-g5-ILu" firstAttribute="leading" secondItem="CMv-dJ-Nyi" secondAttribute="leading" id="4VY-M7-g1J"/>
+                            <constraint firstItem="the-hl-wk8" firstAttribute="leading" secondItem="CMv-dJ-Nyi" secondAttribute="leading" id="8Cb-Jk-JCf"/>
+                            <constraint firstItem="the-hl-wk8" firstAttribute="centerY" secondItem="GAH-S3-OF8" secondAttribute="centerY" id="8I0-qc-amu"/>
+                            <constraint firstItem="tJz-oG-I8J" firstAttribute="top" secondItem="kbv-Ps-mMm" secondAttribute="bottom" constant="30" id="DAv-Yv-dLo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6D9-6L-GQT" secondAttribute="bottom" constant="50" id="DuB-jz-uFl"/>
+                            <constraint firstItem="6D9-6L-GQT" firstAttribute="top" secondItem="bnI-wD-4lv" secondAttribute="bottom" constant="50" id="GpS-SP-PVj"/>
+                            <constraint firstItem="kbv-Ps-mMm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Gpb-ey-EU0"/>
+                            <constraint firstItem="6D9-6L-GQT" firstAttribute="trailing" secondItem="CMv-dJ-Nyi" secondAttribute="trailing" id="HDo-Be-3nz"/>
+                            <constraint firstItem="GAH-S3-OF8" firstAttribute="top" secondItem="edr-dx-4Fo" secondAttribute="bottom" constant="30" id="Jlg-PH-1Cv"/>
+                            <constraint firstItem="XvR-EJ-U4x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N09-Jc-Gi6"/>
+                            <constraint firstItem="6D9-6L-GQT" firstAttribute="leading" secondItem="kbv-Ps-mMm" secondAttribute="leading" id="PQT-PL-Q0B"/>
+                            <constraint firstItem="CVo-Y7-kx9" firstAttribute="leading" secondItem="8Jm-g5-ILu" secondAttribute="leading" id="S0Y-nJ-1Nz"/>
+                            <constraint firstItem="kbv-Ps-mMm" firstAttribute="top" secondItem="XvR-EJ-U4x" secondAttribute="bottom" constant="50" id="VFN-25-D81"/>
+                            <constraint firstItem="CMv-dJ-Nyi" firstAttribute="leading" secondItem="kbv-Ps-mMm" secondAttribute="trailing" constant="50" id="YO7-6s-gU8"/>
+                            <constraint firstItem="tJz-oG-I8J" firstAttribute="leading" secondItem="kbv-Ps-mMm" secondAttribute="leading" id="aNB-qa-sRF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Jm-g5-ILu" secondAttribute="trailing" constant="100" id="bwL-yR-vYp"/>
+                            <constraint firstItem="edr-dx-4Fo" firstAttribute="leading" secondItem="kbv-Ps-mMm" secondAttribute="leading" id="cMG-Za-y7Z"/>
+                            <constraint firstItem="8Jm-g5-ILu" firstAttribute="centerY" secondItem="tJz-oG-I8J" secondAttribute="centerY" id="e9u-L5-LNe"/>
+                            <constraint firstItem="edr-dx-4Fo" firstAttribute="top" secondItem="tJz-oG-I8J" secondAttribute="bottom" constant="30" id="eVz-2f-ZRS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CVo-Y7-kx9" secondAttribute="trailing" constant="100" id="gSy-db-82W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CMv-dJ-Nyi" secondAttribute="trailing" constant="100" id="kk3-fM-oOb"/>
+                            <constraint firstItem="XvR-EJ-U4x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="l0F-Xa-2DZ"/>
+                            <constraint firstItem="CMv-dJ-Nyi" firstAttribute="centerY" secondItem="kbv-Ps-mMm" secondAttribute="centerY" id="nvy-Ab-f6z"/>
+                            <constraint firstItem="CVo-Y7-kx9" firstAttribute="centerY" secondItem="edr-dx-4Fo" secondAttribute="centerY" id="rPG-ZD-LZI"/>
+                            <constraint firstItem="bnI-wD-4lv" firstAttribute="top" secondItem="GAH-S3-OF8" secondAttribute="bottom" constant="50" id="te4-5I-wLp"/>
+                            <constraint firstItem="GAH-S3-OF8" firstAttribute="leading" secondItem="kbv-Ps-mMm" secondAttribute="leading" id="v2s-xb-5L3"/>
+                            <constraint firstItem="bnI-wD-4lv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wkV-I7-KQV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birthTextFiled" destination="the-hl-wk8" id="sbm-Yy-x1n"/>
+                        <outlet property="emailTextField" destination="8Jm-g5-ILu" id="55J-q8-jt2"/>
+                        <outlet property="nameTextField" destination="CMv-dJ-Nyi" id="L1V-Ze-cnb"/>
+                        <outlet property="phoneNumberTextField" destination="CVo-Y7-kx9" id="kgQ-UP-ybm"/>
+                        <outlet property="resultTextview" destination="6D9-6L-GQT" id="0Pl-W0-Q3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
